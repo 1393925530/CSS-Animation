@@ -20,8 +20,8 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
+            -webkit-box-align: center;/*box-align/box-pack居中div框的子元素*/
+            -ms-flex-align: center;/*chrome/safari/oprea支持替代的-webkit-box-align属性*/
             align-items: center;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -33,17 +33,17 @@
         }
         .material-icons {
             color: #fff;
-            font-size: 34px;
+            font-size: 36px; /*菜单图形大小*/
         }
         .button-inside .material-icons {
-            font-size: 16px;
+            font-size: 16px; /*重写点击头像后弹出的图片大小*/
         }
-        .main-wrapper {
-            width: 200px;
-            height: 200px;
+        .main-wrapper {/*整个大的div*/
+            width: 256px;
+            height: 256px;
             position: relative;
             border-radius: 50%;
-            display: -webkit-box;
+            display: -webkit-box;/*流式布局*/
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
@@ -57,15 +57,15 @@
             justify-content: center;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .main-wrapper-inside {
-            width: 200px;
-            height: 200px;
+        .main-wrapper-inside {/*头像大小*/
+            width: 256px;
+            height: 256px;
             position: relative;
         }
-        .button {
+        .button {/*add样式*/
             border-radius: 50%;
-            width: 58px;
-            height: 58px;
+            width: 48px;
+            height: 48px;
             background-color: #F59F00;
             position: absolute;
             bottom: 0;
@@ -102,8 +102,8 @@
             transform: rotate(-45deg) translateZ(0);
         }
         .button-wrapper {
-            width: 200px;
-            height: 200px;
+            width: 256px;
+            height: 256px;
             position: absolute;
             border-radius: 50%;
             display: -webkit-box; 
@@ -138,8 +138,8 @@
         }
         .button-inside {
             border-radius: 50%;
-            width: 44px;
-            height: 44px;
+            width: 38px;
+            height: 38px;
             position: absolute;
             bottom: 3px;
             right: 3px;
@@ -179,7 +179,7 @@
             <i class="material-icons">add</i>
         </div>
         <div class="main-wrapper-inside">
-            <img src="https://image.ibb.co/eCLkRJ/profile_200.png">
+            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png">
         </div>
         <div class="button-wrapper first">
             <div class="button-inside first">
@@ -193,7 +193,7 @@
         </div>
         <div class="button-wrapper third">
             <div class="button-inside third">
-                <i class="material-icons">vdcam</i>
+                <i class="material-icons">email</i>
             </div>
         </div>
     </div>
